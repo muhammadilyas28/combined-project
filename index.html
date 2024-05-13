@@ -6,28 +6,157 @@
     <title>Document</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="./fontawesome-6.4.2/css/all.css">
+
+                                        
+<style> 
+	
+
+.input {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 1em;
+  font-family: Arial, sans-serif;
+}
+
+
+.input[type="number"] {
+  width: 40px;
+  padding: 4px 5px;
+  border: 1px solid #bbb;
+  border-radius: 3px;
+}
+
+/* input[type="range"]:focus,
+input[type="number"]:focus {
+  box-shadow: 0 0 3px 1px #4b81dd;
+  outline: none;
+} */
+
+.input[type="range"] {
+  -webkit-appearance: none;
+  margin-right: 15px;
+  width: 100%;
+  height: 8px;
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 5px;
+  background-image: linear-gradient( to right ,yellow, white);
+  background-size: 70% 100%;
+  background-repeat: no-repeat;
+}
+#multicolor{
+    background-image: linear-gradient( to right ,red, orange, yellow , cyan, blue , lightgreen , green);
+}
+
+[dir="rtl"] .input[type="range"] {
+  background: gray;
+  background-image: linear-gradient(#fff, #fff);
+  background-size: 30% 100%;
+  background-repeat: no-repeat;
+}
+
+/* Input Thumb */
+.input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background: white;
+  cursor: pointer;
+  box-shadow: 0 0 2px 0 #555;
+  transition: background .3s ease-in-out;
+}
+
+.input[type="range"]::-moz-range-thumb {
+  -webkit-appearance: none;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background: white;
+  cursor: pointer;
+  box-shadow: 0 0 2px 0 #555;
+  transition: background .3s ease-in-out;
+}
+
+.input[type="range"]::-ms-thumb {
+  -webkit-appearance: none;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background: white;
+  cursor: ew-resize;
+  box-shadow: 0 0 2px 0 #555;
+  transition: background .3s ease-in-out;
+}
+
+/*
+input[type="range"]::-webkit-slider-thumb:hover {
+  background: #ff0200;
+}
+
+input[type="range"]::-moz-range-thumb:hover {
+  background: #ff0200;
+}
+
+input[type="range"]::-ms-thumb:hover {
+  background: #ff0200;
+}
+*/
+
+/* Input Track */
+.input[type=range]::-webkit-slider-runnable-track  {
+  -webkit-appearance: none;
+  box-shadow: none;
+  border: none;
+  background: transparent;
+}
+
+.input[type=range]::-moz-range-track {
+  -webkit-appearance: none;
+  box-shadow: none;
+  border: none;
+  background: transparent;
+}
+
+.input[type="range"]::-ms-track {
+  -webkit-appearance: none;
+  box-shadow: none;
+  border: none;
+  background: transparent;
+}
+
+
+.glassEffect{
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.34);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(9.9px);
+    -webkit-backdrop-filter: blur(9.9px);
+}
+</style>
+
 </head>
 <body>
     <!-- image part -->
-    <div class="w-[100vw] h-[100vh] bg-cover bg-[url(./1.jpg)] flex flex-row gap-5 justify-center items-center" >
+    <div class="w-[100vw] h-[100vh] bg-cover bg-[url(./office01.jpeg)] flex flex-row gap-5 justify-center items-center" >
         <div class="w-[5vw] h-[50vh] bg-gray-500 opacity-60 rounded-3xl text-2xl flex flex-col gap-5 justify-center items-center">
             ilyas
         </div>
 
         <div class="flex flex-col gap-4 justify-center items-center">
-            <div class="w-[90vw] h-[80vh] bg-red-500 rounded-3xl flex flex-row  gap-5 justify-center items-center">
+            <div class="w-[90vw] h-[80vh] glassEffect  rounded-3xl flex flex-row  gap-5 justify-center items-center">
                 <div class="w-[25vw] h-[75vh] bg-purple-500 rounded-3xl flex flex-col gap-5 justify-center items-center p-4">
                     ilyas
                 </div>
-                <div class="w-[60vw] h-[75vh] bg-blue-500 rounded-3xl flex flex-col  gap-5 justify-center items-center">
+                <div class="w-[60vw] h-[75vh]  rounded-3xl flex flex-col  gap-5 justify-center items-center">
                     <div class="w-[60vw] h-[25vh] bg-orange-500 rounded-xl">
                         imtiaz
                     </div>
-                    <div class="w-[60vw] h-[40vh] bg-red-300  flex gap-4 ">
+                    <div  class="w-[60vw] h-[40vh]  flex gap-4 ">
                         
                         <div class="flex flex-col gap-3 w-[45%] h-full ">
                             
-                            <div class="w-full h-[48%] bg-[#242424] rounded-3xl p-4 flex flex-col justify-between ">
+                            <div class="w-full h-[48%] glassEffect rounded-3xl p-4 flex flex-col justify-between ">
                                 <!-- <div style="backdrop-filter: blur(10px); --webkit-backdrop-filter: blur(10px);" class="absolute w-full h-full z-40 bg-red-600"></div> -->
 
                                 <div class="flex justify-between z-50">
@@ -60,7 +189,7 @@
                                 </div>
                             </div>
 
-                            <div class="w-full h-[52%] bg-[#242424] rounded-3xl p-4 flex flex-col justify-between">
+                            <div class="w-full h-[52%] rounded-3xl p-4 glassEffect flex flex-col justify-between">
 
                                 <div class="flex justify-between">
 
@@ -100,9 +229,9 @@
                             </div>
 
                         </div>
-                        <div class="w-[55%] h-full bg-green-600 ">
+                        <div class="w-[55%] h-full  ">
 
-                            <div class="rounded-3xl bg-[#242424] w-full h-full flex flex-col justify-between p-5">
+                            <div class="rounded-3xl glassEffect w-full h-full flex flex-col justify-between p-5">
                                 <div class="flex justify-between">
 
                                     <div class="flex gap-5">
@@ -131,9 +260,11 @@
                                         <div class="text-white font-medium">Color</div>
                                             
                                     </div>
-                                    <div class="w-full h-2 rounded-lg bg-gradient-to-r from-red-500 via-blue-500  to-green-500 relative">
+                                    <!-- <div class="w-full h-2 rounded-lg bg-gradient-to-r from-red-500 via-blue-500  to-green-500 relative">
                                         <div class="absolute left-[20%] -top-3 w-4 h-8 rounded-2xl bg-white  cursor-pointer"></div>
-                                    </div>
+                                    </div> -->
+
+                                    <input class="input" id="multicolor" type="range" value="70" min="0" max="100"/>
                                 </div>
 
                                 <div class="flex flex-col gap-2">
@@ -145,12 +276,16 @@
                                         <div class="text-white font-medium">Color</div>
                                             
                                     </div>
-                                    <div class="w-full bg-gray-500 rounded-lg">
+                                    <!-- <div class="w-full bg-gray-500 rounded-lg">
 
                                         <div class="w-[79%] h-2 rounded-lg bg-gradient-to-r from-yellow-400 to-white relative">
                                             <div class="absolute left-[98%] -top-1.5 w-5 h-5 rounded-full bg-white cursor-pointer"></div>
                                         </div>
-                                    </div>
+                                    </div> -->
+
+
+                                    <input class="input" type="range" value="70" min="0" max="100"/>
+
                                 </div>
 
                                 <div class="flex flex-col gap-2">
@@ -191,6 +326,51 @@
 
 
     </div>
+
+
+    
+<script> 
+    const rangeInputs = document.querySelectorAll('input[type="range"]')
+    // const rangeInputs = document.querySelectorAll('input[type="range"]')
+    // const numberInput = document.querySelector('input[type="number"]')
+    let isRTL = document.documentElement.dir === 'rtl'
+    
+    function handleInputChange(e) {
+      let target = e.target
+      if (e.target.type !== 'range') {
+        target = document.getElementById('range')
+      } 
+      const min = target.min
+      const max = target.max
+      const val = target.value
+      let percentage = (val - min) * 100 / (max - min)
+      if (isRTL) {
+        percentage = (max - val) 
+      }
+      
+      target.style.backgroundSize = percentage + '% 100%'
+    }
+    
+    rangeInputs.forEach(input => {
+      input.addEventListener('input', handleInputChange)
+    })
+    
+    // numberInput.addEventListener('input', handleInputChange)
+    
+    // // Handle element change, check for dir attribute value change
+    // function callback(mutationList, observer) {  mutationList.forEach(function(mutation) {
+    //     if (mutation.type === 'attributes' && mutation.attributeName === 'dir') {
+    //       isRTL = mutation.target.dir === 'rtl'
+    //     }
+    //   })
+    // }
+    
+    // Listen for body element change
+    const observer = new MutationObserver(callback)
+    observer.observe(document.documentElement, {attributes: true})
+    
+    </script>
+      
 
     
 </body>
