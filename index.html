@@ -44,7 +44,8 @@ input[type="number"]:focus {
   background-repeat: no-repeat;
 }
 #multicolor{
-    background-image: linear-gradient( to right ,red, orange, yellow , cyan, blue , lightgreen , green);
+    background-image: none;
+    background: linear-gradient( to right ,red, orange, yellow , cyan, blue , lightgreen , green);
 }
 
 [dir="rtl"] .input[type="range"] {
@@ -127,11 +128,10 @@ input[type="range"]::-ms-thumb:hover {
 
 .glassEffect{
     /* From https://css.glass */
-    background: rgba(255, 255, 255, 0.34);
-    border-radius: 16px;
+    border: 1px solid #ffffff2e;
+    background: linear-gradient(45deg, #ffffff1a, #2424244d);
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(9.9px);
-    -webkit-backdrop-filter: blur(9.9px);
 }
 </style>
 
