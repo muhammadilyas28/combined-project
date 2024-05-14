@@ -7,19 +7,23 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="./fontawesome-6.4.2/css/all.css">
     <link rel="stylesheet" href="./test.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/roundSlider/1.6.1/roundslider.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/roundSlider/1.6.1/roundslider.min.js"></script>
+<style>
+    
+</style>
 
 </head>
 <body>
-    <!-- image part -->
     <div class="w-[100vw] h-[100vh] bg-cover bg-[url(./1.jpg)] flex flex-row gap-5 justify-center items-center" >
-        
-
+    
         <div class="flex flex-col gap-4 justify-center items-center">
             <div class="w-[90vw] h-[80vh] bg-red-500 rounded-3xl flex flex-row  gap-5 justify-center items-center">
                 <div class="w-[25vw] h-[77vh] bg-purple-500 rounded-3xl gap-3 flex flex-col justify-center items-center">
                     <div class="w-[24vw] h-[45vh] bg-gray-300 rounded-3xl flex flex-col justify-center items-center gap-2">
                        
-                         <div class="w-72 flex flex-row bg-lime-500 justify-between items-center">
+                         <div class="w-72 flex flex-row justify-between items-center">
                              <div class="flex flex-col justify-center items-center">
                                  <div class="flex flex-row gap-2 justify-center items-center">
                                      <div class="w-2 h-2 bg-red-600 rounded-full">
@@ -37,35 +41,36 @@
                              </div>
                              <button class="button" id="cameraButton"><i class="fa-solid fa-power-off"></i> </button>
                          </div>
+
                          <div class="w-72 h-32 ">
                              <img src="./office01.jpeg" alt="">
                          </div>
-                         <div class="flex flex-row gap-12 justify-center items-center">
-                                <div class="flex flex-col-reverse justify-center items-center">
-                                    <p class="m-0">
-                                        Micro
-                                    </p>
-                                    <button class="button" id="microphoneButton"><i class="fas fa-microphone"></i> </button>
-                                </div>
-                                <div class="flex flex-col-reverse justify-center items-center">
-                                    <p>
-                                        Record
-                                    </p>
-                                    <button class="button" id="recordButton"><i class="fas fa-circle"></i> </button>
-                                </div>
-                                <div class="flex flex-col-reverse justify-center items-center">
-                                    <p>
-                                        Capture
-                                    </p>
-                                    <button class="button" id="captureButton"><i class="fas fa-camera"></i> </button>
-                                </div>
- 
+
+                        <div class="flex flex-row gap-12 justify-center items-center">
+                            <div class="flex flex-col-reverse justify-center items-center">
+                                <p class="m-0">
+                                    Micro
+                                </p>
+                                <button class="button" id="microphoneButton"><i class="fas fa-microphone"></i> </button>
                             </div>
+                            <div class="flex flex-col-reverse justify-center items-center">
+                                <p>
+                                    Record
+                                </p>
+                                <button class="button" id="recordButton"><i class="fas fa-circle"></i> </button>
+                            </div>
+                            <div class="flex flex-col-reverse justify-center items-center">
+                                <p>
+                                    Capture
+                                </p>
+                                <button class="button" id="captureButton"><i class="fas fa-camera"></i> </button>
+                            </div>
+
+                        </div>
                      
                      </div>
                      <div class="w-[24vw] h-[45vh] bg-gray-300 rounded-3xl flex flex-col justify-center items-center gap-2">
                        
-                         <!-- Buttons for camera, microphone, record, and capture -->
                          <div class="w-72 flex flex-row justify-between items-center">
                              
                                  <div class="flex flex-col justify-center items-center">
@@ -87,47 +92,22 @@
                                  <button class="button" id="cameraButton"><i class="fa-solid fa-power-off"></i> </button>
                              </div>
                          </div>
-                        
-                        <div class="circleProgress">
-                            <div class="circle-container" id="circleContainer">
-                                
-                                <div class="ball" id="ball"></div>
-                                
-                            </div>
-                        
-                            <div class="circle-bar" id="circleContainer">
-                                
-                                <svg class="border" viewBox="0 -10 100 120">
-                                    <path d="M 50,50 m 0,-50 a 50,50 0 1,1 0,100 a 50,50 0 1,1 0,-100" fill="none" stroke="blue" stroke-width="10" stroke-dasharray="235, 235" transform="rotate(-90, 50, 50)"  stroke-linecap="round"></path>
-                                </svg>
-                    
-                            </div>
-                        </div>
-                         <!-- <div class="bg-black"> -->
-                             <!-- <div class="w-72 h-32 bg-green-500 flex flex-col justify-center items-center gap-0">
-                                <div class="gap-0 bg-slate-800 border-4 border-t-red-500 border-r-red-500 border-l-red-500 border-bottom-w w-32 h-32 rounded-full flex flex-col justify-center items-center">
-                                    <div class="gap-0 bg-slate-800 border-2 border-t-red-500 border-r-red-500 border-l-red-500 border-b-0 w-28 h-28 rounded-full flex flex-col justify-center items-center">
-                                        
-                                        <div class="font-semibold text-3xl text-white">21 <sup class="">0</sup></div>
-                                    </div>
-                                </div>
-                                
-                            </div> -->
-                            <!-- <div class=" w-full bg-green-500 flex flex-row gap-5 justify-center items-center ">
+                        <div id="parent_rotate bg">
 
-                                <div class="relative bottom-5 w-32 bg-green-500 flex flex-row gap-5 justify-center items-center ">
-                                    
-                                    <div class="flex flex-row justify-center items-center gap-1">
-                                        <div>15<sup>0</sup></div>
-                                        <div class="text-4xl bg-white rounded-full w-5 h-5 flex flex-col justify-center items-center">-</div>
-                                    </div>
-                                    <div class="flex flex-row-reverse justify-center items-center gap-1">
-                                        <div>32 <sup>0</sup></div>
-                                        <div class="text-2xl bg-white rounded-full w-5 h-5 flex flex-col justify-center items-center">+</div>
-                                    </div>
+                            <div id="slider" class="rs-bg-color rs-control rs-handle rs-range-color rs-path-color"></div>
+
+                        </div>
+
+                        <div class="">
+                            <div class="w-full flex flex-row gap-5 justify-center items-center ">
+                                <div class="relative w-32 bottom-6 flex flex-row gap-5 justify-center items-center ">
+                    
+                                    <button id="minus" class="text-4xl bg-white rounded-full w-5 h-5 flex flex-col justify-center items-center">-</button>
+                                    <button id="plus" class="text-2xl bg-white rounded-full w-5 h-5 flex flex-col justify-center items-center">+</button>
                                 </div>
-                            </div> -->
-                         <!-- </div> -->
+                            </div>
+                         </div>
+
                          <div class="flex flex-row gap-12 justify-center items-center">
                              <div class="flex flex-col-reverse justify-center items-center">
                                  <p>
@@ -166,9 +146,8 @@
                 ilyas
             </div>
         </div>
-    </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/round-slider@1.6.1/dist/roundslider.min.js"></script>
+    </div>
     <script src="./test.js"></script>
 </body>
 </html>

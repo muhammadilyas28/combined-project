@@ -1,47 +1,51 @@
-const circleContainer = document.getElementById("circleContainer");
-const ball = document.getElementById("ball");
-ball.style.left = "39.3101px";
-ball.style.top = "156.69px";
+$("#slider").roundSlider({
+    sliderType: "min-range",
+    radius: 100,
+    value: 40,
+    min: "30",
+    max: 90,
+    width: 10,
+    handleSize: "+15",
+    lineCap: "round",
+    circleShape: "pie",
+    startAngle: 270,
+});
+console.log("tiuye");
 
-let isDragging = false;
+let parent_rotate=document.getElementById('parent_rotate')
 
-ball.addEventListener("mousedown", (event) => {
-  isDragging = true;
-  ball.style.cursor = "grabbing";
+parent_rotate.style.transform='rotate(45deg)'
+ 
+
+
+// parent_rotate.style.backgroundColor='#d1d5db'
+
+// let slider=document.getElementById('slider')
+
+// let plus=document.getElementById('plus')
+
+// let minus=document.getElementById('minus')
+
+// plus.addEventListener('click', (event)=>{
+//     console.log("PLUS CLICKED");
+//     console.log(event);
+// })
+// minus.addEventListener('click', (event)=>{
+//     console.log("MINUS CLICKED");
+//     console.log(event);
+//     // slider.
+// })
+
+// ---------------------
+
+$("#minus").click(function() {
+    let currentValue = $("#slider").roundSlider("option", "value");
+    let newValue = currentValue - 10;
+    $("#slider").roundSlider("option", "value", newValue);
 });
 
-document.addEventListener("mousemove", (event) => {
-  if (isDragging) {
-    const { clientX, clientY } = event;
-    const { left, top, width, height } = circleContainer.getBoundingClientRect();
-    const centerX = left + width / 2;
-    const centerY = top + height / 2;
-    const angle = Math.atan2(clientY - centerY, clientX - centerX);
-    const radius = width / 2 - ball.offsetWidth / 2;
-    const posX = centerX + Math.cos(angle) * radius - ball.offsetWidth / 2;
-    const posY = centerY + Math.sin(angle) * radius - ball.offsetHeight / 2;
-    
-    console.log(posX);
-    console.log(posY);
-    if (!(posX >= 40 && posY >= 158.5)) {
-        // console.log("if is working");
-        // isDragging=false
-        ball.style.left = `${posX}px`;
-        ball.style.top = `${posY}px`;
-       
-    }
-    // updateProgress(angle);
-  }
+$("#plus").click(function() {
+    let currentValue = $("#slider").roundSlider("option", "value");
+    let newValue = currentValue + 10;
+    $("#slider").roundSlider("option", "value", newValue);
 });
-
-document.addEventListener("mouseup", () => {
-  if (isDragging) {
-    isDragging = false;
-    ball.style.cursor = "grab";
-  }
-});
-
-// function updateProgress(angle) {
-//   const progress = (angle + Math.PI * 2) % (Math.PI * 2) / (Math.PI * 2);
-//   // Use progress to update your circular progress accordingly
-// }
