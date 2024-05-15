@@ -32,7 +32,7 @@ const rangeInputs = document.getElementById('input1[type="range"]')
     //     if (mutation.type === 'attributes' && mutation.attributeName === 'dir') {
     //       isRTL = mutation.target.dir === 'rtl'
     //     }
-    //   })
+    //   })	
     // }
     
     // Listen for body element change

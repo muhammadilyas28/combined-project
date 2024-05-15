@@ -447,26 +447,6 @@ TICKS
 [data-icon="mute"] { --icon: var(--ico-mute); }
 
 /* Demo */
-body {
-  font-family: ui-sansserif, system-ui, sans-serif;
-  margin: 0 auto;
-  max-width: 40rem;
-  padding: 1rem;
-}
-
-header {
-  color: #555;
-  line-height: 1.7;
-  margin-bottom: 2rem;
-}
-
-main {
-  padding-bottom: 3rem;
-}
-
-
-
-
 
 
 
