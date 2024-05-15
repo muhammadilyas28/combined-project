@@ -1,10 +1,10 @@
 $("#slider").roundSlider({
     sliderType: "min-range",
-    radius: 100,
+    radius: 50,
     value: 40,
     min: "30",
     max: 90,
-    width: 10,
+    width: 6,
     handleSize: "+15",
     lineCap: "round",
     circleShape: "pie",
