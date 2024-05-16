@@ -1,0 +1,19 @@
+.rs-control .rs-range-color {
+  background-color: #00bcff;
+}
+.rs-control .rs-path-color {
+  background-color: #ffffff;
+}
+.rs-control .rs-handle {
+  background-color: #e7e7e7;
+}
+.rs-control .rs-bg-color {
+  background-color: #d1d5db;
+}
+#slider {
+  background-color: #d1d5db;
+}
+
+.rs-tooltip{
+  transform: rotate(311deg);
+}
