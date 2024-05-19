@@ -13,11 +13,16 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/roundSlider/1.6.1/roundslider.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/roundSlider/1.6.1/roundslider.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
-<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"
-integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30="
-crossorigin="anonymous"></script>
-<script src="./weather.js"></script>
-<link rel="stylesheet" href="./fontawesome-free-6.5.1-web/css/all.css">
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js" integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30=" crossorigin="anonymous"></script>
+    <script src="./weather.js"></script>
+    <!-- --------------------- -->
+   
+    <link rel="stylesheet" href="./fontawesome-6.4.2/css/all.css">
+    <link rel="stylesheet" href="./test.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/roundSlider/1.6.1/roundslider.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/roundSlider/1.6.1/roundslider.min.js"></script>
+    <!-- --------------------- -->
     
 
 
@@ -44,8 +49,8 @@ crossorigin="anonymous"></script>
         <div class="flex flex-col gap-4 justify-center items-center">
 
             <div class="w-[90vw] h-[80vh] glassEffect  rounded-3xl flex flex-row  gap-5 justify-center items-center">
-                <div class="w-[25vw] h-[77vh] bg-purple-500 rounded-3xl gap-3 flex flex-col justify-center items-center">
-                    <div class="w-[24vw] h-[45vh] bg-gray-300 rounded-3xl flex flex-col justify-center items-center gap-2">
+               <div class="md:w-[25vw] lg:w-[25vw] lg:h-[85vh] md:h-[85vh] overflow-hidden  glassEffect rounded-3xl gap-3 flex flex-col justify-center items-center p-3 text-white">
+                    <div class="md:w-[24vw] lg:w-[24vw] md:h-[47vh] lg:h-[45vh]  glassEffect rounded-3xl flex flex-col justify-center items-center gap-3 p-5">
                        
                         <div class="w-72 flex flex-row justify-between items-center">
                             <div class="flex flex-col justify-center items-center">
@@ -53,12 +58,12 @@ crossorigin="anonymous"></script>
                                     <div class="w-2 h-2 bg-red-600 rounded-full">
     
                                     </div>
-                                    <p class="font-bold text-gray-500">
+                                    <p class="font-bold text-white text-sm">
                                         Live Camera
                                     </p>
                                 </div>
                                 <div>
-                                    <p>
+                                    <p class="text-white text-sm">
                                         Living Room
                                     </p>
                                 </div>
@@ -72,28 +77,28 @@ crossorigin="anonymous"></script>
 
                        <div class="flex flex-row gap-12 justify-center items-center">
                            <div class="flex flex-col-reverse justify-center items-center">
-                               <p class="m-0">
+                               <p class="m-0 text-sm">
                                    Micro
                                </p>
-                               <button class="button" id="microphoneButton"><i class="fas fa-microphone"></i> </button>
+                               <button class="button text-sm" id="microphoneButton"><i class="fas fa-microphone"></i> </button>
                            </div>
                            <div class="flex flex-col-reverse justify-center items-center">
-                               <p>
+                               <p class="text-sm">
                                    Record
                                </p>
-                               <button class="button" id="recordButton"><i class="fas fa-circle"></i> </button>
+                               <button class="button text-sm" id="recordButton"><i class="fas fa-circle"></i> </button>
                            </div>
                            <div class="flex flex-col-reverse justify-center items-center">
-                               <p>
+                               <p class="text-sm">
                                    Capture
                                </p>
-                               <button class="button" id="captureButton"><i class="fas fa-camera"></i> </button>
+                               <button class="button text-sm" id="captureButton"><i class="fas fa-camera"></i> </button>
                            </div>
 
                        </div>
                     
                     </div>
-                    <div class="w-[24vw] h-[45vh] bg-gray-300 rounded-3xl flex flex-col justify-center items-center gap-2">
+                    <div class="md:w-[24vw] lg:w-[24vw] md:h-[45vh] lg:h-[45vh] overflow-hidden  glassEffect rounded-3xl flex flex-col justify-center items-center p-5">
                       
                         <div class="w-72 flex flex-row justify-between items-center">
                             
@@ -102,12 +107,12 @@ crossorigin="anonymous"></script>
                                         <div class="w-2 h-2 bg-green-600 rounded-full">
         
                                         </div>
-                                        <p class="font-bold text-gray-500">
+                                        <p class="font-bold text-sm text-white">
                                             Air conditioner
                                         </p>
                                     </div>
                                     <div>
-                                        <p>
+                                        <p class="text-sm text-white">
                                             Living Room
                                         </p>
                                     </div>
@@ -116,20 +121,19 @@ crossorigin="anonymous"></script>
                                 <button class="button" id="cameraButton"><i class="fa-solid fa-power-off"></i> </button>
                             </div>
                         </div>
-                       <div id="parent_rotate bg">
+                       <div id="parent_rotate" class="flex justify-center items-center">
 
-                           <div id="slider" class="rs-bg-color rs-control rs-handle rs-range-color rs-path-color"></div>
-
-                       </div>
+                           <div id="slider_01" class="rs-bg-color rs-control rs-handle rs-range-color rs-path-color"></div>
+                           <div id="inner_slider" class="z-10 absolute w-[80%]  h-[80%] rounded-full border-2 border-t-[#a1a2a3] border-l-[#a1a2a3] border-r-[#a1a2a3] border-b-[#5b5f61] -rotate-45"></div> 
+                        </div>
 
                        <div class="">
-                           <div class="w-full flex flex-row gap-5 justify-center items-center ">
-                               <div class="relative w-32 bottom-6 flex flex-row gap-5 justify-center items-center ">
-                   
-                                   <button id="minus" class="text-4xl bg-white rounded-full w-5 h-5 flex flex-col justify-center items-center">-</button>
-                                   <button id="plus" class="text-2xl bg-white rounded-full w-5 h-5 flex flex-col justify-center items-center">+</button>
-                               </div>
-                           </div>
+    
+                            <div class="relative lg:w-32 md:w-32  lg:bottom-6 md:bottom-6 flex flex-row gap-5 justify-center items-center ">
+                                <button id="minus" class="text-4xl text-black bg-white rounded-full w-5 h-5 flex flex-col justify-center items-center">-</button>
+                                <button id="plus" class="text-2xl text-black bg-white rounded-full w-5 h-5 flex flex-col justify-center items-center">+</button>
+                            </div>
+
                         </div>
 
                         <div class="flex flex-row gap-12 justify-center items-center">
@@ -155,6 +159,7 @@ crossorigin="anonymous"></script>
                         </div>
                     
                     </div>
+                    
                 </div>
 
                 <div class="w-[60vw] h-[75vh]  rounded-3xl flex flex-col  gap-5 justify-center items-center">
