@@ -8,9 +8,16 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="./fontawesome-6.4.2/css/all.css">
     <link rel="stylesheet" href="./test.css">
+    <link rel="stylesheet" href="./inputRange.css">
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/roundSlider/1.6.1/roundslider.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/roundSlider/1.6.1/roundslider.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"
+integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30="
+crossorigin="anonymous"></script>
+<script src="./weather.js"></script>
+<link rel="stylesheet" href="./fontawesome-free-6.5.1-web/css/all.css">
     
 
 
@@ -155,99 +162,97 @@
                         <div class="w-[60vw] h-[32vh] bg-[url(bg.jpg)] rounded-2xl bg-center  bg-cover flex justify-between relative  ">
                             <div class="w-full h-full absolute bg-black opacity-50 "></div>
                             <!-- navbar -->
-                            <div class=" w-full h-[5rem] borde-2 border-yellow-500   p-8 ">
+                            <div class=" w-full h-[5rem] borde-2 border-yellow-500  p-8 ">
                                
 
 
-                                <div class=" h-[11rem] w-full gap-5  flex flex-col justify-between mt-6">
-                                    <div class=" w-full flex justify-between -mt-12">
-                                        <div class="bg-blur bg-opacity-70 w-[75%] h-[3rem] rounded-full p-4 text-white text-xs flex justify-between  items-center  border border-gray-500">
-                                           
-                                                    <a href="#" class="text-white w-18 px-3 py-3 rounded-full hover:bg-white  hover:text-black">Living Room</a>  
-                                                    <a href="#" class="text-white w-18 px-3 py-3 rounded-full  hover:bg-white  hover:text-black">Kitchen</a>
-                                                    <a href="#" class="text-white w-18 px-3 py-3 rounded-full  hover:bg-white  hover:text-black">Bathroom</a>
-                                                    <a href="#" class="text-white w-18 px-3 py-3 rounded-full  hover:bg-white  hover:text-black">Garage</a>
-                                                    <a href="#" class="text-white w-18 px-3 py-3 rounded-full  hover:bg-white  hover:text-black">Room 1</a>
-                                                    <a href="#" class="text-white w-18 px-3 py-3 rounded-full  hover:bg-white  hover:text-black">Room 2</a>
-                                                
+                                <div class="h-auto w-full gap-5 flex flex-col justify-between mt-6">
+                                    <!-- Navbar -->
+                                    <div class="w-full lg:w-full overflow-hidden flex lg:flex-row justify-between -mt-12">
+                                        <div class="flex justify-between items-center w-full sm:w-1/2 md:w-1/2 lg:w-[75%] h-[3rem] p-4 text-white text-xs border border-gray-500 rounded-full">
+                                            <!-- Hamburger Icon for Small Devices -->
+                                            <div class="lg:hidden">
+                                                <button id="hamburger-btn" class="text-white focus:outline-none">
+                                                    <i class="fa fa-bars"></i>
+                                                </button>
+                                            </div>
+                                            <!-- Links -->
+                                            <div id="nav-links" class="hidden lg:flex bg-blur bg-opacity-70  w-full lg:w-auto h-[3rem] items-center justify-between space-x-2 lg:space-x-2 rounded-full ">
+                                                <a href="#" class="text-white px-3 py-3 rounded-full hover:bg-white hover:text-black">Living Room</a>
+                                                <a href="#" class="text-white px-3 py-3 rounded-full hover:bg-white hover:text-black">Kitchen</a>
+                                                <a href="#" class="text-white px-3 py-3 rounded-full hover:bg-white hover:text-black">Bathroom</a>
+                                                <a href="#" class="text-white px-3 py-3 rounded-full hover:bg-white hover:text-black">Garage</a>
+                                                <a href="#" class="text-white px-3 py-3 rounded-full hover:bg-white hover:text-black">Room 1</a>
+                                                <a href="#" class="text-white px-3 py-3 rounded-full hover:bg-white hover:text-black">Room 2</a>
+                                            </div>
                                         </div>
-
-                                        <div class=" bg-blur bg-opacity-70 w-[20%] h-[3rem] rounded-full p-4 text-white bg-blue-600 items-center text-xs flex justify-center hover:bg-blue-500">
-                                            + &nbsp;  New Space
+                                        <div class="bg-blur bg-opacity-70 sm:w-1/2 md:w-1/2 w-full lg:w-[20%] h-[3rem] rounded-full p-4 mt-2 lg:mt-0 text-white bg-blue-600 flex items-center justify-center text-xs hover:bg-blue-500">
+                                            + &nbsp; New Space
                                         </div>
                                     </div>
 
-                                    <div class="bg-opacity-70 w-full h-20  flex justify-between gap-2  text-white">
-                                        
-                                        <div class=" bg-blur w-[50%] h-18 p-3 flex justify-between gap-2 rounded-lg  border border-gray-500">
-                                            <div class=" w-[20%] rounded-lg flex  text-[1rem] justify-center items-center bg-[url(./imgPause.webp)] bg-cover"><i class="fa-solid fa-pause"></i></div>
-                                            <div class=" w-[80%] rounded-lg flex  flex-col h-full text-xs p-1 px-2">
-                                                <div class=" flex justify-between">
+                                   
+
+                                    
+                                    <div class="bg-opacity-70 lg:w-full h-20 flex flex-col md:flex-row sm:flex-row justify-between gap-2 text-white md:w-[50%] sm:w-[50%] " >
+                                        <div class="bg-blur w-full md:w-[50%] sm:w-[50%] h-18 p-3 flex justify-between gap-2 rounded-lg border border-gray-500">
+                                            <div class="w-[20%] rounded-lg flex text-[1rem] justify-center items-center bg-[url(./imgPause.webp)] bg-cover"><i class="fa-solid fa-pause"></i></div>
+                                            <div class="w-[80%] lg:flex sm:hidden md:hidden rounded-lg flex flex-col h-full text-xs p-1 px-2">
+                                                <div class="flex justify-between">
                                                     <span><b>Gravity</b></span>
-                                                    
                                                 </div>
                                                 <div>Ferdous</div>
                                                 <div class="flex justify-between">
                                                     <div>0:53</div>
-                                                    <div><input type="range" class="input3"></div>
-                                                    
+                                                    <div><input type="range" class="inputRange"></div>
                                                 </div>
                                             </div>
-                                            <div class=" w-[20%] rounded-lg flex  flex-col justify-between p-1 text-xs items-end">
+                                            <div class="w-[20%] lg:flex sm:hidden md:hidden rounded-lg flex flex-col justify-between p-1 text-xs items-end">
                                                 <div><i class="fa-brands fa-gg-circle"></i></div>
                                                 <div>2:38</div>
                                             </div>
                                         </div>
-
-                                        <div class=" bg-blur w-[20%] h-18 text-xs gap-1 flex flex-col  rounded-lg p-3 border border-gray-500">
-                                            <p><b>Speaker</b></p>
-                                            <span class="text-xs">Sonos</span>
+                                
+                                        <div class="bg-blur w-full md:w-[50%] sm:w-[50%] h-18 text-xs gap-1 flex flex-col rounded-lg p-3 border border-gray-500">
+                                            <p class="sm:hidden md:hidden"><b>Speaker</b></p>
+                                            <span class="text-xs sm:hidden md:hidden">Sonos</span>
                                             <div class="flex gap-3">
-                                                <div class=" text-sm"><i class="fa-solid fa-mobile-button"></i></div>
-                                                <div class=" text-sm">Lily's iphone</div>
+                                                <div class="text-sm"><i class="fa-solid fa-mobile-button"></i></div> 
+                                                <div class="text-sm">Lily's iphone</div>
                                             </div>
                                         </div>
-
-                                        <div class=" bg-blur w-[30%] h-18 border  flex justify-between px-4 p-3 rounded-lg text-xs border-gray-500">
-                                            <div class=" border-r flex justify-center items-center flex-col w-[20%] gap-1">
+                                
+                                        <div class="bg-blur w-full md:w-[30%] min-w-[200px] h-18 border flex justify-between px-4 p-3 rounded-lg text-xs border-gray-500">
+                                            <div class="border-r flex justify-center items-center flex-col w-[20%] gap-1">
                                                 <div>26°</div>
                                                 <div><i class="fa-solid fa-cloud-bolt" style="color: #74C0FC;"></i></div>
                                                 <div><b>Now</b></div>
                                             </div>
-                                            
-                                        
-                                            <div class=" border-r flex justify-center items-center flex-col w-[20%] gap-1">
+                                            <div class="border-r flex justify-center items-center flex-col w-[20%] gap-1">
                                                 <div>26°</div>
                                                 <div><i class="fa-solid fa-cloud-bolt" style="color: #74C0FC;"></i></div>
                                                 <div>11am</div>
                                             </div>
-                                            
-                                        
-                                            <div class=" border-r flex justify-center items-center flex-col w-[20%] gap-1">
+                                            <div class="border-r flex justify-center items-center flex-col w-[20%] gap-1">
                                                 <div>26°</div>
                                                 <div><i class="fa-solid fa-cloud-bolt" style="color: #74C0FC;"></i></div>
                                                 <div>12pm</div>
                                             </div>
-                                            
-                                        
-                                            <div class=" border-r flex justify-center items-center flex-col w-[20%] gap-1">
+                                            <div class="border-r flex justify-center items-center flex-col w-[20%] gap-1">
                                                 <div>26°</div>
                                                 <div><i class="fa-solid fa-cloud-bolt" style="color: #74C0FC;"></i></div>
                                                 <div>1pm</div>
                                             </div>
-                                            
-                                        
-                                            <div class=" flex justify-center items-center flex-col w-[20%] gap-1">
+                                            <div class="flex justify-center items-center flex-col w-[20%] gap-1">
                                                 <div>26°</div>
                                                 <div><i class="fa-solid fa-cloud-bolt" style="color: #74C0FC;"></i></div>
                                                 <div>2pm</div>
                                             </div>
-                                            
-                                        
                                         </div>
+                                        
                                     </div>
-                                    
                                 </div>
+                                
 
                             </div>
                             
