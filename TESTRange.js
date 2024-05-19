@@ -21,9 +21,9 @@ const rangeInputs = document.getElementById('input1[type="range"]')
       target.style.backgroundSize = percentage + '% 100%'
     }
     
-    rangeInputs.forEach(input => {
-      input.addEventListener('input', handleInputChange)
-    })
+    // rangeInputs.forEach(input => {
+    //   input.addEventListener('input', handleInputChange)
+    // })
     
     // numberInput.addEventListener('input', handleInputChange)
     
@@ -39,8 +39,8 @@ const rangeInputs = document.getElementById('input1[type="range"]')
     // }
     
     // Listen for body element change
-    const observer = new MutationObserver(callback)
-    observer.observe(document.documentElement, {attributes: true})
+    // const observer = new MutationObserver(callback)
+    // observer.observe(document.documentElement, {attributes: true})
 
 
 class RangeSlider {
@@ -291,4 +291,25 @@ const elements = document.querySelectorAll('[data-range]');
 	// observer2.observe(document.documentElement, {attributes: true})
 
 	// observer2.observe(document.documentElement, {attributes: true})
+
+
+
+// 	// 
+	const input1 = document.getElementById('input1');
+
+function updateSliderBackground() {
+    const value = input1.value;
+    const min = input1.min;
+    const max = input1.max;
+    const percentage = ((value - min) / (max - min)) * 100;
+    input1.style.setProperty('background-size', `${percentage}%`);
+}
+
+input1.addEventListener('input', updateSliderBackground);
+
+
+// Initialize the background on page load
+// updateSliderBackground();
+
+
 

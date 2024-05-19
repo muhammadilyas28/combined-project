@@ -10,11 +10,11 @@ $("#slider").roundSlider({
     circleShape: "pie",
     startAngle: 270,
 });
-console.log("tiuye");
+// console.log("tiuye");
 
 let parent_rotate=document.getElementById('parent_rotate')
 
-parent_rotate.style.transform='rotate(45deg)'
+// parent_rotate.style.transform='rotate(45deg)'
  
 
 
