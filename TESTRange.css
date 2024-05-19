@@ -600,3 +600,169 @@ TICKS
     border: none;
     background: transparent;
 } */
+
+
+
+
+
+
+
+/* General styles for the range input */
+.custom-range {
+    -webkit-appearance: none;
+    width: 100%;
+    margin: 13.8px 0;
+	border-radius: 6px;
+}
+
+/* The track */
+.custom-range::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 8.4px;
+    cursor: pointer;
+    background: linear-gradient(90deg, red, orange, yellow, green, blue, indigo, violet);
+    border-radius: 5px;
+    /* border: 0.2px solid #010101; */
+}
+
+.custom-range:focus::-webkit-slider-runnable-track {
+    background: linear-gradient(90deg, red, orange, yellow, green, blue, indigo, violet);
+}
+
+.custom-range::-moz-range-track {
+    width: 100%;
+    height: 8.4px;
+    cursor: pointer;
+    background: linear-gradient(90deg, red, orange, yellow, green, blue, indigo, violet);
+    border-radius: 5px;
+    /* border: 0.2px solid #010101; */
+}
+
+.custom-range:focus::-moz-range-track {
+    background: linear-gradient(90deg, red, orange, yellow, green, blue, indigo, violet);
+}
+
+.custom-range::-ms-track {
+    width: 100%;
+    height: 8.4px;
+    cursor: pointer;
+    background: transparent;
+    border-color: transparent;
+    color: transparent;
+}
+
+.custom-range::-ms-fill-lower {
+    background: linear-gradient(90deg, red, orange, yellow, green, blue, indigo, violet);
+    border: 0.2px solid #010101;
+    border-radius: 5px;
+}
+
+.custom-range:focus::-ms-fill-lower {
+    background: linear-gradient(90deg, red, orange, yellow, green, blue, indigo, violet);
+}
+
+.custom-range::-ms-fill-upper {
+    background: linear-gradient(90deg, red, orange, yellow, green, blue, indigo, violet);
+    border: 0.2px solid #010101;
+    border-radius: 5px;
+}
+
+.custom-range:focus::-ms-fill-upper {
+    background: linear-gradient(90deg, red, orange, yellow, green, blue, indigo, violet);
+}
+
+/* The thumb */
+.custom-range::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    height: 36px;
+    width: 13px;
+    border-radius: 6px;
+    background: white;
+    cursor: pointer;
+    margin-top: -14px; /* You need to specify a margin in Chrome, Safari, and Opera */
+}
+
+.custom-range:focus::-webkit-slider-thumb {
+    background: white;
+}
+
+.custom-range::-moz-range-thumb {
+    height: 36px;
+    width: 13px;
+    border-radius: 6px;
+    background: white;
+    cursor: pointer;
+}
+
+.custom-range:focus::-moz-range-thumb {
+    background: white;
+}
+
+.custom-range::-ms-thumb {
+    height: 36px;
+    width: 13px;
+    border-radius: 6px;
+    background: white;
+    cursor: pointer;
+}
+
+.custom-range:focus::-ms-thumb {
+    background: white;
+}
+
+/* The focus outline (optional) */
+.custom-range:focus {
+    outline: none;
+}
+
+
+/* input[type="range"] {
+    --slider-value: 50%;
+    -webkit-appearance: none;
+    width: 100%;
+    height: 8px;
+    background: linear-gradient(to right, yellow var(--slider-value), #dddddd var(--slider-value));
+    outline: none;
+    border-radius: 5px;
+    transition: background 0.2s;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    background: yellow;
+    cursor: pointer;
+    border-radius: 50%;
+    box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.2);
+    position: relative;
+    z-index: 1;
+}
+
+input[type="range"]::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    background: yellow;
+    cursor: pointer;
+    border-radius: 50%;
+    box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+input[type="range"]::-ms-thumb {
+    width: 25px;
+    height: 25px;
+    background: yellow;
+    cursor: pointer;
+    border-radius: 50%;
+    box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+input[type="range"]::-ms-track {
+    width: 100%;
+    height: 8px;
+    background: transparent;
+    border-color: transparent;
+    color: transparent;
+} */
+
