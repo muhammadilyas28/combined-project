@@ -23,30 +23,24 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/roundSlider/1.6.1/roundslider.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/roundSlider/1.6.1/roundslider.min.js"></script>
     <!-- --------------------- -->
-    
-
-
-                                        
-
 
 </head>
 <body>
-    
-    <!-- image part -->
-
         
-    <div class="w-[100vw] h-[100vh] bg-cover bg-[url(./office01.jpeg)] flex flex-row gap-5 justify-center items-center" >
-        <div class="glassEffect md:w-[4vw] lg:w-[4vw] lg:h-[36vh] md:h-[36vh] overflow-hidden bg-gray-500 opacity-70 rounded-3xl text-xl flex flex-col gap-2 justify-center items-center">
+    <div class="w-[100vw] lg:w-screen lg:h-screen md:w-full md:h-full bg-cover bg-[url(./office01.jpeg)] flex flex-row gap-5 justify-center items-center" >
+
+        <div class="hidden glassEffect md:w-[4vw] lg:w-[4vw] lg:h-[36vh] md:h-[36vh] overflow-hidden bg-gray-500 opacity-70 rounded-3xl text-xl md:flex flex-col gap-2 justify-center items-center absolute left-0">
             <div class="bg-slate-500 text-gray-300 hover:text-gray-500 hover:bg-white  w-10 h-10 flex flex-col gap-5 justify-center items-center rounded-full"><i class="fa-solid fa-gear"></i></div>
             <div class="bg-slate-500 text-gray-300 hover:text-gray-500 hover:bg-white  w-10 h-10 flex flex-col gap-5 justify-center items-center rounded-full"><i class="fa-regular fa-calendar-days"></i></div>
             <div class="bg-slate-500 text-gray-300 hover:text-gray-500 hover:bg-white  w-10 h-10 flex flex-col gap-5 justify-center items-center rounded-full"><i class="fa-solid fa-bars"></i></div>
             <div class="bg-slate-500 text-gray-300 hover:text-gray-500 hover:bg-white  w-10 h-10 flex flex-col gap-5 justify-center items-center rounded-full"><i class="fa-solid fa-magnifying-glass"></i></div>
         </div>
-    
-        <div class="flex flex-col gap-4 justify-center items-center">
+  
+        <div class="flex lg:flex-col md:flex-row md:overflow-hidden md:flex-wrap justify-center items-center ">
 
-            <div class="w-[90vw] h-[88vh] glassEffect rounded-3xl flex flex-row  gap-5 justify-center items-center">
-               <div class="md:w-[25vw] lg:w-[25vw] lg:h-[85vh] md:h-[85vh] overflow-hidden  glassEffect rounded-3xl gap-3 flex flex-col justify-center items-center p-3 text-white">
+            <div class="lg:w-[90vw] md:w-[100vw] lg:h-[88vh] md:h-[80vh] glassEffect rounded-3xl flex lg:flex-row md:flex-col  sm:flex-col    flex-col  gap-2 justify-center items-center ">
+               <div class=" md:w-[25vw] lg:w-[25vw] lg:h-[85vh] md:h-[85vh] overflow-hidden rounded-3xl gap-3 flex flex-col justify-center items-center p-3 text-white">
+                
                     <div class="md:w-[24vw] lg:w-[24vw] md:h-[47vh] lg:h-[45vh]  glassEffect rounded-3xl flex flex-col justify-center items-center gap-3 p-5">
                        
                         <div class="w-72 flex flex-row justify-between items-center">
@@ -159,19 +153,17 @@
                     
                 </div>
 
-                <div class="w-[65vw] h-[75vh]  rounded-3xl flex flex-col  gap-5 justify-center items-center">
+                <div class=" lg:w-[62vw] lg:h-[85vh] md:w-[62vw] md:h-[85vh] h-[vh] rounded-3xl flex flex-col  gap-7 justify-center items-center">
                     
-                        <div class="w-[60vw] h-[32vh] bg-[url(bg.jpg)] rounded-2xl bg-center  bg-cover flex justify-between relative  ">
-                            <div class="w-full h-full absolute bg-black opacity-50 "></div>
+                        <div class="lg:w-[62vw] md:w-[62vw] w-[90vw] lg:h-[32vh] md:h-[32vh] h-[64vh] bg-[url(bg.jpg)] rounded-2xl bg-center  bg-cover flex justify-between relative  ">
+                            <div class="w-full h-full absolute bg-black opacity-50 rounded-2xl"></div>
                             <!-- navbar -->
-                            <div class=" w-full h-[5rem] borde-2 border-yellow-500  p-8 ">
-                               
-
+                            <div class=" w-full h-[5rem] borde-2 border-yellow-500 rounded-2xl p-8 ">
 
                                 <div class="h-auto w-full gap-5 flex flex-col justify-between mt-6">
                                     <!-- Navbar -->
                                     <div class="w-full lg:w-full overflow-hidden flex lg:flex-row justify-between -mt-12">
-                                        <div class="flex justify-between items-center w-full sm:w-1/2 md:w-1/2 lg:w-[75%] h-[3rem] p-4 text-white text-xs border border-gray-500 rounded-full">
+                                        <div class="flex justify-between items-center  w-full sm:w-1/2 md:w-1/2 lg:w-[75%] h-[3rem] p-4 text-white text-xs border border-gray-500 rounded-full">
                                             <!-- Hamburger Icon for Small Devices -->
                                             <div class="lg:hidden">
                                                 <button id="hamburger-btn" class="text-white focus:outline-none">
@@ -193,9 +185,6 @@
                                         </div>
                                     </div>
 
-                                   
-
-                                    
                                     <div class="bg-opacity-70 lg:w-full h-20 flex flex-col md:flex-row sm:flex-row justify-between gap-2 text-white md:w-[50%] sm:w-[50%] " >
                                         <div class="bg-blur w-full md:w-[50%] sm:w-[50%] h-18 p-3 flex justify-between gap-2 rounded-lg border border-gray-500">
                                             <div class="w-[20%] rounded-lg flex text-[1rem] justify-center items-center bg-[url(./imgPause.webp)] bg-cover"><i class="fa-solid fa-pause"></i></div>
@@ -259,14 +248,14 @@
                             </div>
                             
                         </div>
-                        <div  class="w-[60vw] h-[40vh]  flex flex-wrap lg:flex-nowrap gap-4 ">
+                        <div  class="w-[62vw] h-[50vh] flex flex-wrap lg:flex-nowrap gap-4 justify-center items-center">
                             
-                            <div class="flex flex-col  gap-3 w-full lg:w-[45%] h-full ">
+                            <div class="flex flex-col justify-center items-center gap-3 w-full lg:w-[45%] lg:h-full ">
                                 
-                                <div class="w-full h-[48%] glassEffect rounded-3xl p-4 flex flex-col justify-between ">
+                                <div class="lg:w-full w-[90vw] h-[48%] glassEffect rounded-3xl p-4 flex flex-col justify-between ">
                                    
 
-                                    <div class="flex justify-between z-50">
+                                    <div class="flex justify-between z-50 ">
 
                                         <div class="flex gap-5">
                                             <div class="w-7 h-7 ">
@@ -302,7 +291,7 @@
                                     </div>
                                 </div>
 
-                                <div class="w-full h-[52%] rounded-3xl p-4 glassEffect flex flex-col justify-between">
+                                <div class="lg:w-full w-[90vw] h-[52%] rounded-3xl p-4 glassEffect flex flex-col justify-between">
 
                                     <div class="flex justify-between">
 
@@ -342,9 +331,9 @@
                                 </div>
 
                             </div>
-                            <div class=" w-full lg:w-[55%] h-full  ">
 
-                                <div class="rounded-3xl glassEffect w-full h-full flex flex-col justify-between p-5">
+                            <div class=" w-screen lg:w-[55%] h-full flex justify-center items-center lg:bg-transparent md:bg-transparent bg-[#283a4d] -z-10 ">
+                                <div class="rounded-3xl glassEffect lg:w-full lg:h-full lg:bg-transparent md:bg-transparent bg-[#283a4d] w-[100vw] flex flex-col justify-between p-5">
                                     <div class="flex justify-between">
 
                                         <div class="flex gap-5">
@@ -423,17 +412,18 @@
                                     </div>
                                 </div>
                             </div>
+
                         </div>
                     
                 </div>
             </div>
-            <div class="glassEffect w-[30vw] h-[8vh] rounded-3xl bg-gray-500 opacity-70 flex flex-row gap-5 justify-center items-center">
-                <div class="w-20 h-8 rounded-3xl hover:bg-gray-400 flex flex-row gap-5 justify-center items-center font-semibold text-white">Home</div>
-                <div class="w-20 h-8 rounded-3xl hover:bg-gray-400 flex flex-row gap-5 justify-center items-center font-semibold text-white">Security</div>
-                <div class="w-20 h-8 rounded-3xl hover:bg-gray-400 flex flex-row gap-5 justify-center items-center font-semibold text-white">Analytic</div>
-                <div class="w-20 h-8 rounded-3xl hover:bg-gray-400 flex flex-row gap-5 justify-center items-center font-semibold text-white">Assistant</div>
-                
-            </div>
+            
+        </div>
+        <div class="fixed bottom-0 glassEffect lg:w-[30vw] md:w-[30vw] sm:w-[30vw] lg:h-[8vh] md:h-[8vh] sm:h-[8vh]  rounded-3xl bg-gray-500 opacity-80 glassEffect flex flex-row gap-5 justify-center items-center lg:bottom-4 md:bottom-0 sm:bottom-0">
+            <div class="w-20 h-8 rounded-3xl hover:bg-gray-400 flex flex-row gap-5 justify-center items-center font-semibold text-white">Home</div>
+            <div class="w-20 h-8 rounded-3xl hover:bg-gray-400 flex flex-row gap-5 justify-center items-center font-semibold text-white">Security</div>
+            <div class="w-20 h-8 rounded-3xl hover:bg-gray-400 flex flex-row gap-5 justify-center items-center font-semibold text-white">Analytic</div>
+            <div class="w-20 h-8 rounded-3xl hover:bg-gray-400 flex flex-row gap-5 justify-center items-center font-semibold text-white">Assistant</div>
             
         </div>
     </div>
